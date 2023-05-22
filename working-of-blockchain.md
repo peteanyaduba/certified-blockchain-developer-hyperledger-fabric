@@ -1,20 +1,21 @@
 ## Hyperledger Fabric
 
-### High level
-1.  Application (SDK) submits a proposal
+### High level Highledger Fabric Architecture
+1.  Application (SDK): submits a proposal
 2.  Endorsing Peer: Execute chaincode to simulate proposal in peer
     -   Query state DB for reads
     -   Build Read/Write set
 3.  Endorsing Peer: sends proposal (including Read/WriteSet) response back to SDK
 4.  Application (SDK): Submits transaction (includig Read/WrtieSet) to Ordering Service
 5.  Ordering Service: Creates block of transactions and send them to committing peers
-6.  Committing Peers: Validates each transaction and commit block
+6.  Committing Peers: Receive batch (block) of transactions from ordering service
+7.  Committing Peers: Validates each transaction and commit block
     -   Validate endorsement policy (VSCC)
     -   Validate ReadSet versions in state DB (MVCC)
     -   Commit block to Blockchain
     -   Commit valid transaction to state DB
 
-### Low level
+### Detailed level Highledger Fabric Architecture
 1.  When a user uses a blockchain application through the user interface, the request on the application does not go to the blockchain directly
 2.  The application creates a future update proposal and submits a request for confirmation over the blockchain
 3.  With the request, the application seek to modify the data stored in the blockchain, or the current state of the blockchain

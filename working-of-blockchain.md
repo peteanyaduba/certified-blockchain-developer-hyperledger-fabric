@@ -17,9 +17,10 @@
     -   Commit block to Blockchain
     -   Commit valid transaction to state DB
 
-![HLF](img/hlf-application.png)
+
 
 ## Detailed level Highledger Fabric Architecture
+![HLF](img/hlf-application.png)
 1.  When a user uses a blockchain application through the user interface, the request on the application does not go to the blockchain directly
 2.  The application creates a future update proposal and submits a request for confirmation over the blockchain
 3.  With the request, the application seek to modify the data stored in the blockchain, or the current state of the blockchain

@@ -19,7 +19,7 @@
 
 
 
-## Detailed level Highledger Fabric Architecture
+## Detailed level Hyperledger Fabric Architecture
 ![HLF](img/hlf-application.png)
 1.  When a user uses a blockchain application through the user interface, the request on the application does not go to the blockchain directly
 2.  The application creates a future update proposal and submits a request for confirmation over the blockchain

@@ -1,6 +1,6 @@
-## Hyperledger Fabric
+# Hyperledger Fabric
 
-### High level Highledger Fabric Architecture
+## High level Highledger Fabric Architecture
 1.  Application (SDK): submits a proposal
 2.  Endorsing Peer: Execute chaincode to simulate proposal in peer
     -   Query state DB for reads
@@ -15,7 +15,7 @@
     -   Commit block to Blockchain
     -   Commit valid transaction to state DB
 
-### Detailed level Highledger Fabric Architecture
+## Detailed level Highledger Fabric Architecture
 1.  When a user uses a blockchain application through the user interface, the request on the application does not go to the blockchain directly
 2.  The application creates a future update proposal and submits a request for confirmation over the blockchain
 3.  With the request, the application seek to modify the data stored in the blockchain, or the current state of the blockchain

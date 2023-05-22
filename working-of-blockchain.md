@@ -2,9 +2,9 @@
 
 ## High level Hyperledger Fabric Architecture
 1.  Application (SDK): submits a proposal
-        2.  Endorsing Peer: Execute chaincode to simulate proposal in peer
-            -   Query state DB for reads
-            -   Build Read/Write set
+2.  Endorsing Peer: Execute chaincode to simulate proposal in peer
+    -   Query state DB for reads
+    -   Build Read/Write set
 3.  Endorsing Peer: sends proposal (including Read/WriteSet) response back to SDK
 4.  Application (SDK): Submits transaction (includig Read/WrtieSet) to Ordering Service
 5.  Ordering Service: Creates block of transactions and send them to committing peers

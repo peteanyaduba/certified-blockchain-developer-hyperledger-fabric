@@ -1,6 +1,6 @@
 # Hyperledger Fabric
 
-## High level Highledger Fabric Architecture
+## High level Hyperledger Fabric Architecture
 1.  Application (SDK): submits a proposal
 2.  Endorsing Peer: Execute chaincode to simulate proposal in peer
     -   Query state DB for reads

@@ -10,13 +10,18 @@
 
 ## Transaction Flow Breakdown
 
-1.  Transaction proposal is sent to the endorsing peers by the Client
-2.  Endorsement response are sent back to the Client by the endorsing peers
-3.  Client sends Endorsement Response to the Ordering Services
-4.  Ordering Services updates the ledger using the Endorsement Response
-5.  Ordering Services receives response from Committing Peers
-6.  The response is broadcasted to the other peers informing them the transaction has been committed and that the ledger has been updated
-7.  Lastly, connected peers revise their ledger to be in sync with the channel ledger
+1.  Transaction proposal: 
+    -   is sent to the endorsing peers by the Client
+2.  Endorsement Response:
+    -   Endorsement response are sent back to the Client by the endorsing peers
+    -   Client sends Endorsement Response to the Ordering Services
+4.  Role of Ordering Service:
+    -   Ordering Services updates the ledger using the Endorsement Response
+    -   Ordering Services receives response from Committing Peers
+    -   The response is broadcasted to the other peers informing them the transaction has been committed and that the ledger has been updated
+7.  Ledger Update:
+    -   
+        Lastly, connected peers revise their ledger to be in sync with the channel ledger
 
 <hr/>
 

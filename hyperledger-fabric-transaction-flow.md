@@ -19,12 +19,12 @@
 7.  Lastly, connected peers revise their ledger to be in sync with the channel ledger
 
 <!--![HLF](img/hlf-transaction-flow.png)--> 
-<p align="center">
+<p>
 <img src="img/hlf-transaction-flow.png"  width="600">
 </p>
 
 ## Transaction Flow - Order Services
 <!--![HLF](img/hlf-transaction-flow-orderer.png)-->
-<p align="center">
+<p>
 <img src="img/hlf-transaction-flow-orderer.png"  width="600">
 </p>

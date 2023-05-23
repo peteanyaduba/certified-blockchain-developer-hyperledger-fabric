@@ -20,7 +20,6 @@
     -   Ordering Services receives response from Committing Peers
     -   The response is broadcasted to the other peers informing them the transaction has been committed and that the ledger has been updated
 7.  Ledger Update:
-    -   
         Lastly, connected peers revise their ledger to be in sync with the channel ledger
 
 <hr/>

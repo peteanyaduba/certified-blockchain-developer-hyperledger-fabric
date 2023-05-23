@@ -23,8 +23,7 @@
 <img src="img/hlf-transaction-flow.png"  width="600">
 </p>
 
-### Transaction Flow - Order Services
-<hr>
+<div style="border-bottom:1px;">Transaction Flow - Orderer Services</div>
 <!--![HLF](img/hlf-transaction-flow-orderer.png)-->
 <p>
 <img src="img/hlf-transaction-flow-orderer.png"  width="600">

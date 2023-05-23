@@ -9,7 +9,8 @@
 
 
 ### Transaction Flow Breakdown
-<hr />
+<hr style="border-bottom:1px solid #ccc" />
+
 1.  Transaction proposal is sent to the endorsing peers by the Client
 2.  Endorsement response are sent back to the Client by the endorsing peers
 3.  Client sends Endorsement Response to the Ordering Services

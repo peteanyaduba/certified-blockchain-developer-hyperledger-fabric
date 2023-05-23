@@ -8,8 +8,7 @@
 6.  An endorsement policy has also been setup for this chaincode, stating that all peers must endorse any transaction
 
 
-### Transaction Flow Breakdown
-<hr />
+## Transaction Flow Breakdown
 
 1.  Transaction proposal is sent to the endorsing peers by the Client
 2.  Endorsement response are sent back to the Client by the endorsing peers
@@ -28,6 +27,9 @@
 
 ![HLF](img/hlf-transaction-flow-orderer.png)
 <!-- <img src="img/hlf-transaction-flow-orderer.png"  width="600"> -->
+
+## Transacton Proposal
+
 
 1.  A client in an organization uses some SDK or an application to initiate the transaction
 2.  The Transacton proposal is prepared and is sent to endorsing peers

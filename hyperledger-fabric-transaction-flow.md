@@ -25,5 +25,6 @@
 
 ### Transaction Flow - Orderer Services
 <hr>
-<!--![HLF](img/hlf-transaction-flow-orderer.png)-->
-<img src="img/hlf-transaction-flow-orderer.png"  width="600">
+
+![HLF](img/hlf-transaction-flow-orderer.png)
+<!-- <img src="img/hlf-transaction-flow-orderer.png"  width="600"> -->

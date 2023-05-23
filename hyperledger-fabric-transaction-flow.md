@@ -18,6 +18,8 @@
 6.  The response is setting to the other peers informing them the transaction has been committed and that the ledger has been updated
 7.  Lastly, connected peers revise their ledger to be in sync with the channel ledger
 
-![HLF](img/hlf-transaction-flow.png)
+<!--![HLF](img/hlf-transaction-flow.png)--> 
+<img src="img/hlf-transaction-flow.png"  width="600">
 
-![HLF](img/hlf-transaction-flow-orderer.png)
+<!--![HLF](img/hlf-transaction-flow-orderer.png)-->
+<img src="img/hlf-transaction-flow-orderer.png"  width="600">

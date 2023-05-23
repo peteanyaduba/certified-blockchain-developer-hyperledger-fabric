@@ -8,8 +8,8 @@
 6.  An endorsement policy has also been setup for this chaincode, stating that all peers must endorse any transaction
 
 
-## Transaction Flow Breakdown
-
+### Transaction Flow Breakdown
+<hr />
 1.  Transaction proposal is sent to the endorsing peers by the Client
 2.  Endorsement response are sent back to the Client by the endorsing peers
 3.  Client sends Endorsement Response to the Ordering Services
@@ -23,7 +23,8 @@
 <img src="img/hlf-transaction-flow.png"  width="600">
 </p>
 
-## Transaction Flow - Order Services
+### Transaction Flow - Order Services
+<hr>
 <!--![HLF](img/hlf-transaction-flow-orderer.png)-->
 <p>
 <img src="img/hlf-transaction-flow-orderer.png"  width="600">

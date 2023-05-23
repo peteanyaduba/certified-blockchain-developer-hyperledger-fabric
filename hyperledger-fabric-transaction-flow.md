@@ -28,3 +28,9 @@
 
 ![HLF](img/hlf-transaction-flow-orderer.png)
 <!-- <img src="img/hlf-transaction-flow-orderer.png"  width="600"> -->
+
+1.  A client in an organization uses some SDK or an application to initiate the transaction
+2.  The Transacton proposal is prepared and is sent to endorsing peers
+3.  The proposal is a request to invoke a chaincode function so that data can be read and/or written to the peer ledger
+
+![HLF](img/hlf-transaction-proposal.png)

@@ -24,4 +24,6 @@
 </p>
 
 <!--![HLF](img/hlf-transaction-flow-orderer.png)-->
+<p align="center">
 <img src="img/hlf-transaction-flow-orderer.png"  width="600">
+</p>

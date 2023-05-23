@@ -20,6 +20,7 @@
 7.  Lastly, connected peers revise their ledger to be in sync with the channel ledger
 
 <hr/>
+
 ![HLF](img/hlf-transaction-flow.png) 
 
 ### Transaction Flow - Orderer Services

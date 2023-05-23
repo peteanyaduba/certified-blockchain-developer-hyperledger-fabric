@@ -45,4 +45,4 @@
 5.  Similarly, in this database, we are not directly updating the ledger. Instead we are checking if after 100, 101 is coming or not. It updates a copy of the ledger after the 101st entry has come in, and it puts this entry as a read and write set within the transaction proposal.
 6.  Then the Endorsing peers signs this transaction using their certificate. Once it is approved, the proposal response is sent to the client again.
 
-![HLF](img/hlf-endorsement-response.png)
+![HLF](img/hlf-endoresment-response.png)

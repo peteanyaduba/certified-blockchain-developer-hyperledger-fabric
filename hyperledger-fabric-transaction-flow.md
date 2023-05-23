@@ -72,5 +72,12 @@
 
 ![HLF](img/hlf-invocation-response.png)
 
+## Ledger Update
+1.  All the peers append the block to the channel's chain.
+2.  Write sets are committed to current state database for all valid transactions.
+3.  After that, an event is emitted to the application that invocation response has been immutably appended to the chain, as well as notification of whether the transaction was validated or invalidated
+    -   It also notifies all the peers connected to the channel about the current state of the blockchain ledger.
+    -   Hence, every peer syncs to the blockchain ledger and updates to the new state of the ledger via the transaction proposal
 
 
+![HLF](img/hlf-ledger-update.png)

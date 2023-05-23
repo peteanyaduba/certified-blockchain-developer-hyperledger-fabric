@@ -15,7 +15,7 @@
 3.  Client sends Endorsement Response to the Ordering Services
 4.  Ordering Services updates the ledger using the Endorsement Response
 5.  Ordering Services receives response from Committing Peers
-6.  The response is setting to the other peers informing them the transaction has been committed and that the ledger has been updated
+6.  The response is broadcasted to the other peers informing them the transaction has been committed and that the ledger has been updated
 7.  Lastly, connected peers revise their ledger to be in sync with the channel ledger
 
 <hr/>
@@ -71,4 +71,6 @@
 4.  It is through this method that Hyperledger maintains the history and transparency in all the transactions
 
 ![HLF](img/hlf-invocation-response.png)
+
+
 

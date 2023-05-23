@@ -34,7 +34,7 @@
 ![HLF](img/hlf-transaction-flow-orderer.png)
 <!-- <img src="img/hlf-transaction-flow-orderer.png"  width="600"> -->
 
-## Transact-on Proposal
+## Transaction Proposal
 
 
 1.  A client in an organization uses some SDK or an application to initiate the transaction

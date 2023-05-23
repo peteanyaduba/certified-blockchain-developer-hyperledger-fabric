@@ -18,7 +18,7 @@
 6.  The response is setting to the other peers informing them the transaction has been committed and that the ledger has been updated
 7.  Lastly, connected peers revise their ledger to be in sync with the channel ledger
 
-<hr />
+<hr style="border-bottom: 1px solid #ccc" />
 <!--![HLF](img/hlf-transaction-flow.png)--> 
 <p>
 <img src="img/hlf-transaction-flow.png"  width="600">

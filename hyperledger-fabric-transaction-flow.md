@@ -10,7 +10,7 @@
 
 ## Transaction Flow Breakdown
 
-1.  Transaction proposal is sent to the endorsing peers
+1.  Transaction proposal is sent to the endorsing peers by the Client
 2.  Endorsement response are sent back to the Client by the endorsing peers
 3.  Client sends Endorsement Response to the Ordering Services
 4.  Ordering Services updates the ledger using the Endorsement Response
@@ -19,3 +19,5 @@
 7.  Lastly, connected peers revise their ledger to be in sync with the channel ledger
 
 ![HLF](img/hlf-transaction-flow.png)
+
+![HLF](img/hlf-transaction-flow-orderer.png)

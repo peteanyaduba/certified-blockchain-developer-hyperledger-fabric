@@ -46,3 +46,14 @@
 6.  Then the Endorsing peers signs this transaction using their certificate. Once it is approved, the proposal response is sent to the client again.
 
 ![HLF](img/hlf-endoresment-response.png)
+
+## Role of Ordering Services
+
+1.  Once the Client receives the endorsed transaction, it verifies endorsing peer signatures and compares the endorsement response to determine if the proposal responses are the same.
+2.  The Client "broadcasts" the transaction proposal and endorsement response within a "transaction message" to the Ordering Service.
+    -   The transaction contains the read/write sets, the endorsing peers signatures and the ChannelID.
+3.  Ordering service updates the ledger by simply creating read and write sets of the transaction along with the new state of the blockchain on the ledger
+    -   The Ordering Service broadcasts the update to all the peers who are connected to the blockchain.
+4.  The Ordering Service receives the transactions from all channels in the network, orders them chronologically by channel, and creates blocks of transactions per channel.
+
+![HLF](img/hlf-orderer-role.png)

@@ -35,3 +35,12 @@
                 -   For instance, the architecture of Godaddy Certificate Authority or even if you are creating your own CA you will know that it is very similar to what Fabric is providing. It provides you with security because the ROOT keys are isolated from the other keys and no one has access to the ROOT key. You can also use hardware security modules (HSM) with the Hyperledger fabric system. HSM refers to the hardware which is being used to store the certificates. 
                     -   No one has direct access to the HSM and it is tough to hack the HSM system
                     -   An example is NETFLIX which uses the HSMs with its CA to store all the certificates for the user.
+
+
+## Features of Certificate Authority
+
+1.  The CA (Fabric CA by default) issues:
+    -   A root certificate (rootCert) to each member that is authorized to join the network
+    -   An enrollment certificate (eCert) to each member component, server-side applications and occassionally users
+    -   A transaction certificate (tCerts), each tCert authorizes one network transaction
+2.  Different types of certificates are available for the CA

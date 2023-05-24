@@ -48,3 +48,5 @@
             -   The root certficate
             -   The enrollment certificate
             -   The transaction certificate
+
+2.  The requirement for a permissioned identity for every user enables ACL-based control over network activity, and guarantees that every transaction is ultimately traceable to a registered user.

@@ -43,4 +43,5 @@
     -   A root certificate (rootCert) to each member that is authorized to join the network
     -   An enrollment certificate (eCert) to each member component, server-side applications and occassionally users
     -   A transaction certificate (tCerts), each tCert authorizes one network transaction
+        
         >   Different types of certificates are available for the CA

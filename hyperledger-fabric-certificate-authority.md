@@ -50,3 +50,8 @@
             -   The transaction certificate
 
 2.  The requirement for a permissioned identity for every user enables ACL-based control over network activity, and guarantees that every transaction is ultimately traceable to a registered user.
+
+3.  This certificate-based control over network membership and actions enable members to restric access to private and confidential channels, applications, and data, by specific user identities.
+    -   By using CA, you limit people as per the permissions granted in the certificate authority
+        -   Therefore, the root cert, enrollment cert and transaction cert are provided by default. But we can create our different permission based access.
+        -   Thus we can produce a certificate stating that a particular peer will have access to only one specific channel or a certificate which states that the the specific peer will have access to multiple channels but not all within the Fabric network.

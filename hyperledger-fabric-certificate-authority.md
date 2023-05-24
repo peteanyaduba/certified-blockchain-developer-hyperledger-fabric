@@ -45,6 +45,6 @@
     -   A transaction certificate (tCerts), each tCert authorizes one network transaction
         
         >   Different types of certificates are available for the CA.
-            -   The root certficate
-            -   The enrollment certificate
-            -   The transaction certificate
+            >   The root certficate
+            >   The enrollment certificate
+            >   The transaction certificate

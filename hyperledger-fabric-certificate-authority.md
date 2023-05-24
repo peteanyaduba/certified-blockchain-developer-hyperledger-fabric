@@ -28,3 +28,10 @@
         -   Fabric SDKs
             -   Here, clients are the direct entities that can help to generate certificates manually for any peer or node. If a node or any peer is running an application on top of that, then they can use SDKs to request certificates
             -   The client routes the entire certificate generation to an HA Proxy endpoint which load balances traffic to one of the fabric-CA server cluster members
+                -   Hencie it manages all the traffic for the Fabric-CA Server.
+            -   All CA servers in a cluster share the same database like MySQL, PostgreSQL for storing identities and certificates
+            -   If LDAP (Lightweight Directory Access Protocol) is configured, the identity information is kept in it rather than the database.
+                -   This is basically, the fundamental architecture used in many websites.
+                -   For instance, the architecture of Godaddy Certificate Authority or even if you are creating your own CA you will know that it is very similar to what Fabric is providing. It provides you with security because the ROOT keys are isolated from the other keys and no one has access to the ROOT key. You can also use hardware security modules (HSM) with the Hyperledger fabric system. HSM refers to the hardware which is being used to store the certificates. 
+                    -   No one has direct access to the HSM and it is tough to hack the HSM system
+                    -   An example is NETFLIX which uses the HSMs with its CA to store all the certificates for the user.

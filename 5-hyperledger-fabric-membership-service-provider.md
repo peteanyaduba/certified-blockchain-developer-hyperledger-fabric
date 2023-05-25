@@ -27,3 +27,10 @@
 
             ## Diagram of a standard architecture of the MSP.
             ![HLF](img/hlf-msp.png)
+
+            -   There are two organizations, ORG1 and ORG2
+            -   Global MSPs OR1_MSP and ORG2_MSP runs behind the organizations above
+            -   Every time peers join from different organizations the global MSPs, the global MSP containing ORG1.MSP and ORG2.MSP generate the certificates accordingly.
+                -   This certificate is then instantiated by the peer who installs it in their local file system to validate and verify the different blockchain processes that are happening within the system.
+                -   So we have 2 organizations. Local MSPs who are part of the global MSPs and the same MSPs are used to generate the same certificates based upon the different organizations. These certificates could be the same or different formats depending on business requirements when connected to the channel.
+                -   The channel is represented by C in the middle of the diagram above

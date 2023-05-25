@@ -25,5 +25,5 @@
         -   It is a more modular approach to membership operations and inter-operability across different standards which are being used. Therefore, some banks can have a certain standard of user format, and another bank, some additional measures of user format. Both of them are fulfilled by using MSP and we can divide them as per requirement. Thus it maintains the modular approach of hyperledger fabric throughout.
             -   It also helps to create a solution which is pluggable and we can replace anything possible in the hyperledger fabric system.
 
-            Diagram of a standard architecture of the MSP.
+            ## Diagram of a standard architecture of the MSP.
             ![HLF](img/hlf-msp.png)

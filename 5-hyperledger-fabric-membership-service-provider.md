@@ -18,8 +18,11 @@
                 -   For example, if there are vendors who are getting connected to the private blockchain ith a one year contract, then we can create and revoke the certificate after one year. We don't have to revoke manually. We can add the revocation command through the SDKs. Or we can put the revocation with that certificate itself; specifying that it is a time-based certificate where cancellation will happen automatically once the time period exhausts.
         -   Signature generation and verification
             -   Each peer signs the transaction with their respective certificate before sending it to other peers. The other peers verifies the signatures with the helpf of the MSPs.
-3.  A hyperledger fabric blockchain etwork can be governed by one or more MSPs, which provides modularity of membership operations, and interoperability across different membership standards
+3.  A hyperledger fabric blockchain network can be governed by one or more MSPs, which provides modularity of membership operations, and interoperability across different membership standards
     -   Hence, there can be a possibility of different organizations running on one single blockchain.
         -   Assume we are creating a solution for a bank, when we have multiple banks connected to one single blockchain and there is one MSP for each bank.
-        -   This way each bank can have their format of identity, validation and verification which can be used to interact with the blockchain.
-        -   It is a more modular approach to membership operations and inter-operability across different standards which are being used. Therefore, some banks can have a certain standard of user format another bank some additional measures of user format
+        -   This way, each bank can have their format of identity, validation and verification which can be used to interact with the blockchain.
+        -   It is a more modular approach to membership operations and inter-operability across different standards which are being used. Therefore, some banks can have a certain standard of user format, and another bank, some additional measures of user format. Both of them are fulfilled by using MSP and we can divide them as per requirement. Thus it maintains the modular approach of hyperledger fabric throughout.
+            -   It also helps to create a solution which is pluggable and we can replace anything possible in the hyperledger fabric system.
+
+            ![HLF](img/hlf-msp.png)

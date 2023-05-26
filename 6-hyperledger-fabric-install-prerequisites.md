@@ -69,7 +69,10 @@
 
             Press Ctrl+X and type Y when done.
 
+4.  Install nodejs
+    <hr>
 
+        sudo apt install nodejs
 
 
 

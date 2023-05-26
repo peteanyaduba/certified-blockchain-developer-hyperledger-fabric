@@ -62,3 +62,5 @@
     5.  **A list of X.509 certificates to represent intermediate TLS CAs**
         -   TLS is the Transport Layer Security CAs
     6.  **A list of self-signed (X.509) certificates of TLS root of trust for TLS certifiate**
+
+    All the above certificates are with the MSP. We can have a structure for these but the Hyperledger fabric provides a default.

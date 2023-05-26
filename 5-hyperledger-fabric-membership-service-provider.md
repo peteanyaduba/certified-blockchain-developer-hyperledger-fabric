@@ -76,3 +76,12 @@
         -   The X.509 certificate has a specific structure which has to be followed
         -   The MSP will check whether the structure has been followed; whether the certificate provided should be in the X.509 format and not included in the CRL
         -   All these are validated when the certificates are checked
+
+## Generating MSP certificates
+
+1.  For generating X.509 certificates to feed its MSP configuration, application can use:
+    -   OpenSSL
+    -   Cryptogen tool
+    -   Hyperledger Fabric CA
+
+    Since they are already present in the hyperledger fabric any of them can be used.

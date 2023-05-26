@@ -59,6 +59,7 @@
 
     -   ### Paste the following code below into the ./profile 
         <hr>   
+            
             sudo nano ./profile
 
             export GOROOT=$HOME/go

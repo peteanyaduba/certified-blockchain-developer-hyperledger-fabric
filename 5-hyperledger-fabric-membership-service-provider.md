@@ -37,3 +37,8 @@
                 -   The peers are tagged as P connected to the channel
                 -   Certificates are stored as files on the file system which are being stored with the peers themselves
             -   The diagram above explains in a simple way, how the MSPs provide certificates for the hyperledger system
+
+## How to use MSP?
+
+1.  The MSP must be installed on each channel peer to ensure that transaction requests that are issued to the peer originate from an authenticated and authorized user identity
+    -   A local MSP must be present on each peer which then connects to the global MSP for the organization. This peer holds the organizational file system or each of them knows that these are the recognized certificates by the global MSP. Suppose we have a global MSP which generates 50 certificates for 50 different peers. Then every peer will have a local MSP

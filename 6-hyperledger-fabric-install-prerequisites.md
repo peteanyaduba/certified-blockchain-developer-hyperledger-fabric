@@ -65,7 +65,8 @@
             export GOPATH=$HOME/go_projects
             export PATH=$PATH:/usr/local/go/bin:$GOROOT/bin
 
-    ### Press Ctrl+X and type Y when done.
+            Press Ctrl+X and type Y when done.
+
 
 
 

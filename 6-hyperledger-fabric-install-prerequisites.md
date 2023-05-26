@@ -57,8 +57,8 @@
 
             mkdir $HOME/go_projects
 
-    -   Paste the following code below into the ./profile 
-        -   
+    -   ### Paste the following code below into the ./profile 
+        <hr>   
             sudo nano ./profile
 
             export GOROOT=$HOME/go

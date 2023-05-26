@@ -106,7 +106,8 @@
         -   It is the one which is being used to interact with all the functions within the MSP
         -   The MSP will take the config.yaml file and use it to communicate with the CA
         -   The above is the folder structure which is followed and is quite similar to the certficate authority we have worked with before for creating our certificate authorities
-        #
+        
+        ## MSP Components Diagram
         ![HLF](img/hlf-msp-architecture.png)
 
 

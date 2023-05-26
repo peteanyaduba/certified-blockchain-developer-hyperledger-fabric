@@ -52,5 +52,5 @@
         -   So it is clear that there is no root CA at the point of local MSPs. Root CAs are completely fabricated from the system and we use intermediate CAs to interact with different MSPs
     -   A list of x.509 certificates to represent the administrators of this MSP
         -   This is a cryptographic standard. 
-    -   A list of X.509 certificates is present with the MSPs and they know which certificates that has been provisioned and which peers have been authorized to connect to the blockchain
+        -   A list of X.509 certificates is present with the MSPs and they know which certificates that has been provisioned and which peers have been authorized to connect to the blockchain
     -   A list of valid members of this MSP

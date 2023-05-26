@@ -63,4 +63,10 @@
         -   TLS is the Transport Layer Security CAs
     6.  **A list of self-signed (X.509) certificates of TLS root of trust for TLS certifiate**
 
-    All the above certificates are with the MSP. We can have a structure for these but the Hyperledger fabric provides a default.
+    -   All the above certificates are with the MSP. We can have a structure for these but the Hyperledger fabric provides a default. 
+    -   However, default settings are better to used in cryptography than creating our own custom settings because they've been proved before hand within different industries
+
+## MSP's Valid Identity
+
+-  Valid and authorized identities for the MSP instance are required to satisfy the following list conditions:
+    1.   MSP instance should be in the form of X.509 certificates with a verifiable certifiate path to exactly one of the root of trust certificates

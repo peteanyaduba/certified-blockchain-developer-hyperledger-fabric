@@ -84,4 +84,22 @@
     -   Cryptogen tool
     -   Hyperledger Fabric CA
 
-    Since they are already present in the hyperledger fabric any of them can be used.
+    Since they are already present in the hyperledger fabric any of them can be used. 
+2.  Any library that has the standard of the X.509 certificate can be used to interact with the Hyperledger Fabric.
+
+
+## MSP Setup
+
+1.  To setup a local MSP (for either a peer or an orderer), the administrator should create a folder that contains these subfolders and a file:
+    -   The MSP has to be setup in this definitive way with different folders for different types of certificates depending on the functions they will perform. We have the following certificates:
+        -   admincerts
+        -   cacerts
+        -   intermediatecerts
+        -   crls
+        -   keystore
+        -   signcerts
+        -   tlscacerts
+        -   tlsintermediatecerts
+        -   config.yaml file
+
+    -   In the configuration file of the node (core.yaml file for the peer, and orderer.yaml for the orderer), one needs to specify the path to this folder, and the MSP Identifier of the node's MSP.

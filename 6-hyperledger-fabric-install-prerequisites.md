@@ -44,7 +44,6 @@
 
         <LOGOUT AND RELOGIN AT THIS STEP>
 3.  Install Go
-
     -   
         Go to the directory you want to install go and run the curl command to download it
 

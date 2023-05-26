@@ -69,4 +69,7 @@
 ## MSP's Valid Identity
 
 -  Valid and authorized identities for the MSP instance are required to satisfy the following list conditions:
-    1.   MSP instance should be in the form of X.509 certificates with a verifiable certifiate path to exactly one of the root of trust certificates
+    1.  MSP instance should be in the form of X.509 certificates with a verifiable certifiate path to exactly one of the root of trust certificates
+    2.  MSP instance should not be included in any Certificate Revocation List (CRL)
+        -   If a certificate is not in CRL then it means that the certificate is valid
+    3.  MSP instance lists one or more of the Organizational Units of the MSP configuration in the OU field of their X.509 certifiate structure

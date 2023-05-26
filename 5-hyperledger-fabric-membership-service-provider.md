@@ -50,15 +50,15 @@
 3.  If a default implementation of MSP is chosen, a set of parameters are required to be specified to allow for identity validation and signature verification, this includes:
     1.  **A list of self-signed (X.509) certificates to represent intermediate CAs**
         -   So it is clear that there is no root CA at the point of local MSPs. Root CAs are completely fabricated from the system and we use intermediate CAs to interact with different MSPs
-    2.  A list of x.509 certificates to represent the administrators of this MSP
+    2.  **A list of x.509 certificates to represent the administrators of this MSP**
         -   This is a cryptographic standard. 
         -   A list of X.509 certificates is present with the MSPs and they know which certificates that has been provisioned and which peers have been authorized to connect to the blockchain
-    3.   A list of valid members of this MSP
-    4.   A list of certificate revocation lists (CRLs)
+    3.  **A list of valid members of this MSP**
+    4.  **A list of certificate revocation lists (CRLs)**
         -   Provide information on which certificate has been revoked. 
         -   Certificates don't need to be deleted, instead the CRL can be checked for example:  
             -   if file certificates have been revoked
         -   Certificates don't need to be validated because they have already been rejected and are not presented in the blockchain
-    5.   A list of X.509 certificates to represent intermediate TLS CAs
+    5.  **A list of X.509 certificates to represent intermediate TLS CAs**
         -   TLS is the Transport Layer Security CAs
-    6.   A list of self-signed (X.509) certificates of TLS root of trust for TLS certifiate
+    6.  **A list of self-signed (X.509) certificates of TLS root of trust for TLS certifiate**

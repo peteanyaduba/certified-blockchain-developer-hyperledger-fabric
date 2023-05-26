@@ -49,6 +49,7 @@
     -   About the MSP, we directly use this unique ID for every instance of the local MSPs which are running.
 3.  If a default implementation of MSP is chosen, a set of parameters are required to be specified to allow for identity validation and signature verification, this includes:
     1.   **A list of self-signed (X.509) certificates to represent intermediate CAs**
+        
         -   So it is clear that there is no root CA at the point of local MSPs. Root CAs are completely fabricated from the system and we use intermediate CAs to interact with different MSPs
     2.  A list of x.509 certificates to represent the administrators of this MSP
         -   This is a cryptographic standard. 

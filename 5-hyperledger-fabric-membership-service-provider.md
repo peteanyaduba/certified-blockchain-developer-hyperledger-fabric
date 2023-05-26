@@ -72,4 +72,7 @@
     1.  MSP instance should be in the form of X.509 certificates with a verifiable certifiate path to exactly one of the root of trust certificates
     2.  MSP instance should not be included in any Certificate Revocation List (CRL)
         -   If a certificate is not in CRL then it means that the certificate is valid
-    3.  MSP instance lists one or more of the Organizational Units of the MSP configuration in the OU field of their X.509 certifiate structure
+    3.  MSP instance lists one or more of the Organizational Units (OUs) of the MSP configuration in the OU field of their X.509 certifiate structure
+        -   The X.509 certificate has a specific structure which has to be followed
+        -   The MSP will check whether the structure has been followed; whether the certificate provided should be in the X.509 format and not included in the CRL
+        -   All these are validated when the certificates are checked

@@ -41,4 +41,16 @@
 ## How to use MSP?
 
 1.  The MSP must be installed on each channel peer to ensure that transaction requests that are issued to the peer originate from an authenticated and authorized user identity
-    -   A local MSP must be present on each peer which then connects to the global MSP for the organization. This peer holds the organizational file system or each of them knows that these are the recognized certificates by the global MSP. Suppose we have a global MSP which generates 50 certificates for 50 different peers. Then every peer will have a local MSP
+    -   A local MSP must be present on each peer which then connects to the global MSP for the organization. This peer holds the organizational file system or each of them knows that these are the recognized certificates by the global MSP. 
+        -   Suppose there is a global MSP which generates 50 certificates for 50 different participating peers. Then every peer will have a local MSP which will give the details that these 50 certificates are recognized within the private blockchain. 
+        -   If out of these 50 certificates there are any of which are not recognized, then the peer itself can reject the kind of transaction, changes or updates over the state of the blockchain. 
+        -   This is how an MSP is governed.
+2.  A MSP Identifier or MSP ID needs to be specified for each MSP, in order to reference that MSP in the network which must be unique per MSP instance.
+    -   About the MSP, we directly use this unique ID for every instance of the local MSPs which are running.
+3.  If a default implementation of MSP is chosen, a set of parameters are required to be specified to allow for identity validation and signature verification, this includes:
+    -   A list of self-signed (X.509) certificates to represent intermediate CAs
+        -   So it is clear that there is no root CA at the point of local MSPs. Root CAs are completely fabricated from the system and we use intermediate CAs to interact with different MSPs
+    -   A list of x.509 certificates to represent the administrators of this MSP
+        -   This is a cryptographic standard. 
+    -   A list of X.509 certificates is present with the MSPs and they know which certificates that has been provisioned and which peers have been authorized to connect to the blockchain
+    -   A list of valid members of this MSP

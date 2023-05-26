@@ -42,7 +42,34 @@
 
             sudo chmod +x /usr/local/bin/docker-compose
 
-            <LOGOUT AND RELOGIN AT THIS STEP>
+        <LOGOUT AND RELOGIN AT THIS STEP>
+3.  Install Go
+
+    -    Go to the directory you want to install go and run the curl command to download it
+
+        curl -O https://d1.google.com/go/go1.10.3.linux-amd64.tar.gz
+
+        sha256sum go1.10.3.linux-amd64.tar.gz
+
+        tar xvf go1.10.3.linux-amd64.tar.gz
+
+        sudo chown -R root:root ./go
+        sudo mv go /usr/local
+
+        mkdir $HOME/go_projects
+
+        ### Paste the following code below into the ./profile 
+
+        sudo nano ./profile
+
+        export GOROOT=$HOME/go
+
+        export GOPATH=$HOME/go_projects
+
+        export PATH=$PATH:/usr/local/go/bin:$GOROOT/bin
+
+        ### Press Ctrl+X and type Y when done.
+
 
 
 

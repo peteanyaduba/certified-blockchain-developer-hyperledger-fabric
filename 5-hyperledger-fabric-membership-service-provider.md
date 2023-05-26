@@ -105,9 +105,12 @@
     -   In the configuration file of the node (core.yaml file for the peer, and orderer.yaml for the orderer), one needs to specify the path to this folder, and the MSP Identifier of the node's MSP.
         -   It is the one which is being used to interact with all the functions within the MSP
         -   The MSP will take the config.yaml file and use it to communicate with the CA
-        -   The above is the folder structure which is followed and is quite similar to the certficate authority we have worked with before for creating our certificate authorities
+        -   The above is the folder structure which is followed and is quite similar to the certficate authority we have worked with before or created our certificate authorities
         
-        ## MSP Components Diagram
-        ![HLF](img/hlf-msp-architecture.png)
+## MSP Components Diagram
+![HLF](img/hlf-msp-architecture.png)
+
+-   MSP has different stated components inside it. It also has rootCAs, intermediateCAs, organizational units, Administrators, Revocation lists, Signing certificates, Keystore which holds the private keys for our certificates, Transport Layer Security for RootCAs and IntermediateCAs
+    -   The MSP will have all these components and as per these components, all the interactions, all the generation and all the enrollment for the users, nodes and computers will take place within our hyperledger system.
 
 

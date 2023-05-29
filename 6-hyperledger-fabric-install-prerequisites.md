@@ -74,5 +74,8 @@
 
         sudo apt install nodejs
 
+5.  Install Python
+    <hr>
 
+        sudo apt-get install python
 

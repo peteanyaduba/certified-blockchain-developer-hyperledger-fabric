@@ -14,11 +14,11 @@
             ca-certificates \
             curl \
             gnupg-agent \
-            Software-properties-common
+            software-properties-common
 
         curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-        sudo apt -key fingerprint OEBFCD88
+        sudo apt-key fingerprint OEBFCD88
 
         sudo add-apt-repository \
             "deb [arch=amd64] https://download.docker.com/linux/ubuntu \

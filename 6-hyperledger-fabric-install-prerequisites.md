@@ -22,7 +22,7 @@
 
         sudo add-apt-repository \
             "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-            $(lab_release -cs) \
+            $(lsb_release -cs) \
             stable"
         
         sudo apt-get update

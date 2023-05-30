@@ -1,5 +1,7 @@
 # Deploying the Hyperledger Container
 
+    mkdir hlf && cd hlf
+
     curl -sSL http://bit.ly/2ysbOFE | bash -s 2.0.0
 
     export PATH=$PATH:$HOME/fabric-samples/bin

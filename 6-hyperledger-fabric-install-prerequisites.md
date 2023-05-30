@@ -23,52 +23,137 @@
 
         apt-cache madison docker-ce
 
-        ignore this command - (sudo apt-get install docker-ce=5:20.10.3~3-0~ubuntu-focal docker-ce-cli=5:20.10.3~3-0~ubuntu-focal containerd.io)
-        
-        sudo docker run hello-world
+        HLF prerequisites - Commands
 
-        sudo usermod -aG docker $(USER)
-    -   Docker Compose 
-        -   
-            sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+3.  Install Git
 
-            sudo chmod +x /usr/local/bin/docker-compose
+        sudo apt-get update
 
-            LOGOUT AND RELOGIN AT THIS STEP
-3.  Install Go
-    -   
-    ### Go to the directory you want to install go and run the curl command to download it 
-    <hr>   
-   
-            curl -O https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
+        sudo apt-get install git
 
-            sha256sum go1.10.3.linux-amd64.tar.gz
+        Git –version
 
-            tar xvf go1.10.3.linux-amd64.tar.gz
 
-            sudo chown -R root:root ./go
-            sudo mv go /usr/local
+4.  Install cURL
 
-            mkdir $HOME/go_projects
+        sudo apt install curl
 
-    -   ### Paste the following code below into the ./profile 
-        <hr>   
-            
-            sudo nano ~/.profile
+        curl --version
 
-            export GOROOT=$HOME/go
-            export GOPATH=$HOME/go_projects
-            export PATH=$PATH:/usr/local/go/bin:$GOROOT/bin
 
-            Press Ctrl+X and type Y when done.
+5.  Install Docker
 
-4.  Install nodejs
-    <hr>
+        sudo apt install docker.io
 
-        sudo apt install nodejs
+        docker --version
 
-5.  Install Python
-    <hr>
+        sudo systemctl start docker
 
-        sudo apt-get install python
+        sudo systemctl enable docker
+
+        sudo groupadd docker
+
+        sudo usermod -aG docker ${USER}
+
+6.  Logout and login to run further command
+
+        docker run hello-world
+
+        ----If you still get docker.sock issues, run the command:
+
+        sudo setfacl --modify user:$USER:rw /var/run/docker.sock
+
+
+7.  Install Docker Compose
+
+        sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+        sudo chmod +x /usr/local/bin/docker-compose
+
+        docker-compose --version
+
+
+8.  Install GoLang
+
+        wget -c https://dl.google.com/go/go1.18.1.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
+
+
+9.  Edit .profile file
+
+        Open "~/.profile" and append the code below to the file
+
+        nano ~/.profile
+
+        export GOPATH=$PATH:/usr/local/go
+        export PATH=$PATH:$GOPATH/bin
+
+        source ~/.profile
+
+10. LOGOUT AND LOGIN AGAIN
+
+        go version
+
+        # export GOPATH=$PATH:/usr/local/go
+        # export PATH=$PATH:/usr/local/go/bin
+
+
+        ***NOTE***
+        # Before running any code first check that go is reachable. Run the code below
+
+        go version
+
+        # If go is not reachable run the code below to set the go path. Errors can cause the go path to be terminated
+
+        source ~/.profile
+
+        # Then check if go is now reachable
+
+        go version
+
+
+
+11. Install nvm, node and npm
+
+        sudo apt-get install build-essential libssl-dev
+
+        curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+
+        Paste a resemblance of the following code to continue
+
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+        nvm --version
+
+        nvm install v14.15.4
+
+        nvm use v14.15.4
+
+        node --version
+
+        npm --version
+
+
+12. Working with Docker
+
+        ---Check if docker volumes exist
+
+        docker volume ls
+
+        ---Stop Docker containers
+
+        docker stop $(docker ps -aq)
+
+        ---Remove Docker containers
+
+        docker rm $(docker ps -aq)
+
+        ---Remove Docker volumes
+
+        docker volume prune
+
+        ---Remove Docker Image
+
+        # docker rmi <image_name>
 

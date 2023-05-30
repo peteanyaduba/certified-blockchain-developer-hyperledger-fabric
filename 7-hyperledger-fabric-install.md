@@ -20,7 +20,7 @@
 
     ./startFabric.sh
 
-    cd ~/fabric-samples/fabcar/javascript
+    cd fabric-samples/fabcar/javascript
 
     node enrollAdmin.js
 

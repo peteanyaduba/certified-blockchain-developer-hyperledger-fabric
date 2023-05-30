@@ -9,3 +9,17 @@
     sudo apt install npm
 
     npm update
+
+## Start the Fabric engine -
+
+    docker rm -f $(docker ps -aq)
+
+    cd ~/fabric-samples/fabcar
+
+    ./startFabric.sh
+
+    cd ~/fabric-samples/fabcar/javascript
+
+    node enrollAdmin.js
+
+    node registerUser.js

@@ -28,7 +28,7 @@
 
         apt-cache madison docker-ce
 
-        sudo apt-get install docker-ce=5:20.10.3-3-0-ubuntu-focal docker-ce-cli=5:20.10.3-3-0-ubuntu-focal containerd.io
+        sudo apt-get install docker-ce=5:20.10.3~3-0~ubuntu-focal docker-ce-cli=5:20.10.3~3-0~ubuntu-focal containerd.io
         
         sudo docker run hello-world
 

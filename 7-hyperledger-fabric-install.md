@@ -6,7 +6,7 @@
 
     export PATH=$PATH:$HOME/fabric-samples/bin
 
-    cd ~/fabric-samples/fabcar/javascript
+    cd fabric-samples/fabcar/javascript
 
     sudo apt install npm
 

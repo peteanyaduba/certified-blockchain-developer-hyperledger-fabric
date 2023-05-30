@@ -42,8 +42,8 @@
             LOGOUT AND RELOGIN AT THIS STEP
 3.  Install Go
     -   
-        ### Go to the directory you want to install go and run the curl command to download it 
-        <hr>   
+    ### Go to the directory you want to install go and run the curl command to download it 
+    <hr>   
    
             curl -O https://d1.google.com/go/go1.10.3.linux-amd64.tar.gz
 

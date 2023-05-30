@@ -45,7 +45,7 @@
     ### Go to the directory you want to install go and run the curl command to download it 
     <hr>   
    
-            curl -O https://d1.google.com/go/go1.10.3.linux-amd64.tar.gz
+            curl -O https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
 
             sha256sum go1.10.3.linux-amd64.tar.gz
 
